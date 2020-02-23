@@ -13,6 +13,8 @@
 		61D92C652402BBB500F93B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D92C642402BBB500F93B38 /* Assets.xcassets */; };
 		61D92C682402BBB500F93B38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D92C672402BBB500F93B38 /* Preview Assets.xcassets */; };
 		61D92C6B2402BBB500F93B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D92C692402BBB500F93B38 /* LaunchScreen.storyboard */; };
+		61D92C742402BE9500F93B38 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D92C732402BE9500F93B38 /* CircleImage.swift */; };
+		61D92C762402C13B00F93B38 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D92C752402C13B00F93B38 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		61D92C672402BBB500F93B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61D92C6A2402BBB500F93B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61D92C6C2402BBB500F93B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D92C722402BBC300F93B38 /* SwiftUITraining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUITraining.entitlements; sourceTree = "<group>"; };
+		61D92C732402BE9500F93B38 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		61D92C752402C13B00F93B38 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 		61D92C5D2402BBB400F93B38 /* SwiftUITraining */ = {
 			isa = PBXGroup;
 			children = (
+				61D92C722402BBC300F93B38 /* SwiftUITraining.entitlements */,
 				61D92C5E2402BBB400F93B38 /* AppDelegate.swift */,
 				61D92C602402BBB400F93B38 /* SceneDelegate.swift */,
 				61D92C622402BBB400F93B38 /* ContentView.swift */,
@@ -63,6 +69,8 @@
 				61D92C692402BBB500F93B38 /* LaunchScreen.storyboard */,
 				61D92C6C2402BBB500F93B38 /* Info.plist */,
 				61D92C662402BBB500F93B38 /* Preview Content */,
+				61D92C732402BE9500F93B38 /* CircleImage.swift */,
+				61D92C752402C13B00F93B38 /* MapView.swift */,
 			);
 			path = SwiftUITraining;
 			sourceTree = "<group>";
@@ -147,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D92C5F2402BBB400F93B38 /* AppDelegate.swift in Sources */,
+				61D92C742402BE9500F93B38 /* CircleImage.swift in Sources */,
+				61D92C762402C13B00F93B38 /* MapView.swift in Sources */,
 				61D92C612402BBB400F93B38 /* SceneDelegate.swift in Sources */,
 				61D92C632402BBB400F93B38 /* ContentView.swift in Sources */,
 			);
@@ -284,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUITraining/SwiftUITraining.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITraining/Preview Content\"";
 				DEVELOPMENT_TEAM = 7APS8X6932;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanjaykatta.SwiftUITraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUITraining/SwiftUITraining.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITraining/Preview Content\"";
 				DEVELOPMENT_TEAM = 7APS8X6932;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanjaykatta.SwiftUITraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
